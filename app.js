@@ -31,7 +31,7 @@ app.get('/api/activities/delete', (req, res) => {
   services.deleteAllActivites(req, res);
 });
 
-app.get('/api/activities/newtable', (req, res) => {
+app.post('/api/activities/newtable', (req, res) => {
   services.createTable();
 });
 
