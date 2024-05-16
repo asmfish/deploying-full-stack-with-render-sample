@@ -55,7 +55,7 @@ const createTable = () => {
   const createString = 'CREATE TABLE my_activities(activity text)';
    pool.query(createString) // send query to create table
     .then(res.send('Table created!')) // send confirmation to the browser
-    .catch(err => console.log(err));  
+    .catch(err => res.send(err) );  
 }
 
 module.exports = { getSingleActivity, addActivityToDB, getAllActivities, deleteAllActivites, createTable}
