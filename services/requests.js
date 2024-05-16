@@ -58,4 +58,4 @@ const createTable = () => {
     .catch(err => console.log(err));  
 }
 
-module.exports = { getSingleActivity, addActivityToDB, getAllActivities, deleteAllActivites }
+module.exports = { getSingleActivity, addActivityToDB, getAllActivities, deleteAllActivites, createTable}
